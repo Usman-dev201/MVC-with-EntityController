@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(
-    opts => opts.UseSqlServer(builder.Configuration.GetConnectionString("defualt"))
+    opts => opts.UseSqlServer(builder.Configuration.GetConnectionString("link"))
     );
 
 var app = builder.Build();
